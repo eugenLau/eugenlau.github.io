@@ -1,0 +1,205 @@
+/* src/index.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Global layout styling */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  /* background: url('../public/imageHero00.jpg') no-repeat center center/cover; */
+
+}
+
+header h1 {
+  color: black;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navigation */
+nav {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Hero Section */
+.hero {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background: url('../public/images/DSC01069.jpg') no-repeat center center/cover;
+
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form label {
+  margin: 0.5rem 0;
+  width: 80%;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact form button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact form button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
