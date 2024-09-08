@@ -2,6 +2,8 @@
 import React from 'react';
 import '../styles/Home.css';
 import PhotoGrid from './PhotoGrid.js';
+import ServiceDescription from './ServiceDescription.js';
+import Procedure from './Procedure.js';
 
 const Home = () => (
   <main>
@@ -10,6 +12,8 @@ const Home = () => (
     </section>
         
     <PhotoGrid/>
+    <ServiceDescription/>
+    <Procedure/>
   </main>
   
 );

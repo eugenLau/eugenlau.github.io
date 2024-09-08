@@ -1,8 +1,9 @@
 // src/components/PhotoGrid.js
 import React, { useState } from 'react';
-import '../styles/PhotoGrid.css'; // Import the CSS file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import '../styles/PhotoGrid.css';
 
-// Dynamically import all images from the assets/images directory
 const importAll = (r) => {
     return r.keys().map(r);
 };
@@ -12,7 +13,7 @@ const images = importAll(require.context('../assets/images', false, /\.(png|jpe?
 const PhotoGrid = () => {
     const [startIndex, setStartIndex] = useState(0);
     const imagesPerPage = 6;
-    
+
     const handleNext = () => {
         if (startIndex + imagesPerPage < images.length) {
             setStartIndex(startIndex + imagesPerPage);
@@ -35,8 +36,12 @@ const PhotoGrid = () => {
                 ))}
             </div>
             <div className="navigation">
-                <button onClick={handlePrevious} disabled={startIndex === 0}>Previous</button>
-                <button onClick={handleNext} disabled={startIndex + imagesPerPage >= images.length}>Next</button>
+                <button onClick={handlePrevious} disabled={startIndex === 0}>
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </button>
+                <button onClick={handleNext} disabled={startIndex + imagesPerPage >= images.length}>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </button>
             </div>
         </div>
     );
