@@ -1,4 +1,6 @@
 /* src/styles/Procedure.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=New+Amsterdam&display=swap');
+
 .procedure {
     padding: 40px 20px;
     background-color: black;
@@ -7,6 +9,8 @@
     border-radius: 10px;
     max-width: 800px;
     margin: 40px auto;
+    font-family: "Cinzel", sans-serif;
+
   }
   
   h2 {
