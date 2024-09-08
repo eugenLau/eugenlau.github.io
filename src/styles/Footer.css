@@ -1,0 +1,22 @@
+/* Footer.css */
+
+.footer {
+    background-color: black; /* Black background */
+    padding: 20px; /* Padding for some space around the icon */
+    text-align: center; /* Center the icon */
+}
+
+.footer a {
+    color: white; /* White color for the icon */
+    font-size: 24px; /* Size of the Instagram icon */
+    text-decoration: none; /* Remove any underline on the link */
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #e1306c; /* Change color to Instagram's brand color on hover */
+}
+
+.footer a:active {
+    transform: scale(0.95); /* Slightly shrink the icon on click */
+}

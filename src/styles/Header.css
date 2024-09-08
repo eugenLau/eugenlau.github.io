@@ -1,40 +1,59 @@
-/* src/styles/Header.css */
-/*header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-  }*/
-/*   
-  .c-header {
-    background: linear-gradient(to right, black, white);  
-    padding: 1rem;  
-    text-align: center;  
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
-  }
-  
-  .c-header h1 {
-    margin: 0;
-    font-size: 2.5rem; 
-    color: #ffd700; 
-  } */
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=New+Amsterdam&display=swap');
 
-  .c-header .header-container {
+  /* .c-header .header-container {
     display: flex;
-    justify-content: space-between; /* This aligns the child elements on opposite sides */
-    align-items: center; /* Aligns items vertically centered */
-    padding: 10px 20px; /* Optional: Adds some padding around the header */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
 }
 
   .c-header h1 {
-      margin: 0; /* Remove any default margin */
-      font-size: 24px; /* Optional: Adjust the font size as needed */
+      color: white;
+      font-family: "Cinzel", sans -serif;
+      margin: 0; 
+      font-size: 38px; 
   }
 
   .c-header .header-container nav {
-      /* Assuming <Navigation /> renders a <nav> element, apply any styles you need here */
+      
+} */
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black; /* Dark background */
+  color: white; /* White text color for h1 */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Cinzel", sans-serif;
+  color: white; /* Set the h1 font color to white */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  background-color: black;
+}
+
+.nav-button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #9b59b6;
 }
