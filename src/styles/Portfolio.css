@@ -1,0 +1,29 @@
+/* src/styles/Portfolio.css */
+.portfolio-container {
+    opacity: 0; /* Start with hidden */
+    transition: opacity 1s ease-in-out; /* Fade-in effect */
+  }
+  
+  .portfolio-container.fade-in {
+    opacity: 1; /* Fully visible */
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust to display 3 items per row */
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  

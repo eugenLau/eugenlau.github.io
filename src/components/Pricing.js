@@ -1,23 +1,54 @@
 // src/components/Pricing.js
 import React from 'react';
 import '../styles/Pricing.css';
+import PricingCard from './PricingCard';
+
+import basicImage from '../assets/images/DSC07920.jpg'; 
+import standardImage from '../assets/images/DSC09391.jpg';
+import premiumImage from '../assets/images/DSC02790.jpg';
 
 const Pricing = () => {
   return (
     <section className="pricing">
-      <h2>Photography Packages</h2>
-      <div className="pricing-card">
-        <h3>Standard Photo Session</h3>
-        <p className="price">$250</p>
-        <ul>
-          <li>1-hour session</li>
-          <li>1 location of your choice</li>
-          <li>20 professionally edited photos</li>
-          <li>High-resolution digital downloads</li>
-          <li>Online gallery for easy sharing</li>
-        </ul>
-        <a href="/contact" className="book-now">Book Now</a>
-      </div>
+      <PricingCard
+        image={basicImage}
+        title="Basic Photo Session"
+        price="125 €"
+        features={[
+          '3 photos of your choice',
+          '1 location',
+          'Delivery: 21 days'
+        ]}
+        direction="left"
+      />
+
+      <PricingCard
+        image={standardImage}
+        title="Standard Photo Session"
+        price="150 €"
+        features={[
+          '5 photos of your choice',
+          '2 locations',
+          'Delivery: 14 days',
+          'Bonus: Outfit consultation',
+          'Bonus: Introduction to simple and natural posing'
+        ]}
+        direction="right"
+      />
+
+      <PricingCard
+        image={premiumImage}
+        title="Premium Photo Session"
+        price="250 €"
+        features={[
+          '10 photos of your choice',
+          'Unlimited locations',
+          'Delivery: 5 days',
+          'Bonus: Outfit consultation',
+          'Bonus: Introduction to simple and natural posing'
+        ]}
+        direction="left"
+      />
     </section>
   );
 };

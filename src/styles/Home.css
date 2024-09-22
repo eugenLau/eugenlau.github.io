@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=New+Amsterdam&display=swap');
 
+
+/* src/styles/Home.css */
+.home {
+    opacity: 0; /* Start with hidden */
+    transition: opacity 1s ease-in-out; /* Fade-in effect */
+  }
+  
+  .home.fade-in {
+    opacity: 1; /* Fully visible */
+  }
+  
+  .hero {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Add other styles for PhotoGrid, ServiceDescription, and Procedure as needed */
+  
 .hero p {
     font-family: "Cinzel", sans-serif;
     font-weight: bold;

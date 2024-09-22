@@ -1,0 +1,68 @@
+/* src/styles/PricingCard.css */
+.pricing-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* flex-direction: row; */
+    align-items: center;
+  }
+  
+  .pricing-card.left {
+    flex-direction: row; 
+  }
+  
+  .pricing-card.right {
+    flex-direction: row-reverse; 
+  }
+  
+  .pricing-card-image img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .pricing-card-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .pricing-card h3 {
+    margin-top: 0;
+  }
+  
+  .pricing-card .price {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pricing-card ul li {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .book-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .book-now:hover {
+    background-color: #333;
+  }
+  

@@ -13,6 +13,9 @@ const Header = () => (
     <Link to="/pricing">
       <button className="nav-button">Pricing</button>
     </Link>
+    <Link to="/portfolio">
+      <button className="nav-button">Portfolio</button>
+    </Link>
     {/* <Link to="/contact">
       <button className="nav-button">Contact</button>
     </Link> */}
